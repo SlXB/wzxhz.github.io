@@ -222,7 +222,7 @@
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">官方下载</h2>
             <p class="text-slate-500 mb-10 font-light">点击下方按钮，前往官方下载页获取最新版本</p>
             <a class="bg-primary hover:bg-primaryDark text-white px-10 py-4 rounded-full font-bold text-lg shadow-[0_10px_30px_rgba(37,99,235,0.2)] hover:shadow-[0_15px_40px_rgba(37,99,235,0.35)] hover:-translate-y-1 transition-all duration-300 tracking-wide" href="https://share.feijipan.com/s/ClvcwLwt" target="_blank" rel="noopener">立即下载</a>
-            <p class="text-xs text-slate-400 mt-6 tracking-wider">点击后跳转至极盘下载页，请认准官方网站 </p>
+            <p class="text-xs text-slate-400 mt-6 tracking-wider">点击后跳转至极盘下载页，请认准官方网站 wzxz.top</p>
           </div>
         </div>
       </div>
@@ -266,7 +266,7 @@
           <div id="modal-placeholder" class="flex flex-col items-center gap-4">
             <i data-lucide="image" class="w-12 h-12 text-slate-300"></i>
             <p class="text-sm font-medium text-slate-500">真实UI截图占位区</p>
-            <p class="text-xs text-slate-400 px-6 text-center">请将图片放入 `images/previews/` 目录，命名为 <br> `<span id="modal-filename" class="font-mono text-primary"></span>`</p>
+            <p class="text-xs text-slate-400 px-6 text-center">请将图片上传至根目录，命名为 <br> `<span id="modal-filename" class="font-mono text-primary"></span>`</p>
           </div>
           <button id="prev-btn" onclick="changePreviewImage(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-slate-800 rounded-full shadow-md flex items-center justify-center cursor-pointer transition-all hidden"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
           <button id="next-btn" onclick="changePreviewImage(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-slate-800 rounded-full shadow-md flex items-center justify-center cursor-pointer transition-all hidden"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
@@ -286,17 +286,17 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // ==========================================
-    // 🎯 核心配置区：图片放在 images/previews/ 下即可
+    // 🎯 核心配置区：图片直接放根目录
     // ==========================================
     const editorData = [
-      { id: 'skin', name: '皮肤编辑器', icon: 'palette', color: 'text-blue-500', bg: 'bg-blue-50', images: ['images/previews/skin_1.png', 'images/previews/skin_2.png'] },
-      { id: 'hero', name: '英雄编辑器', icon: 'sword', color: 'text-indigo-500', bg: 'bg-indigo-50', images: ['images/previews/hero_1.png', 'images/previews/hero_2.png'] },
-      { id: 'equip', name: '装备编辑器', icon: 'shield', color: 'text-blue-600', bg: 'bg-blue-100', images: ['images/previews/equip_1.png', 'images/previews/equip_2.png'] },
-      { id: 'bio', name: '生物编辑器', icon: 'ghost', color: 'text-purple-500', bg: 'bg-purple-50', images: ['images/previews/bio_1.png', 'images/previews/bio_2.png'] },
-      { id: 'map', name: '地图编辑器', icon: 'map', color: 'text-emerald-500', bg: 'bg-emerald-50', images: ['images/previews/map_1.png', 'images/previews/map_2.png'] },
-      { id: 'broadcast', name: '播报编辑器', icon: 'megaphone', color: 'text-red-500', bg: 'bg-red-50', images: ['images/previews/broadcast_1.png'] },
-      { id: 'key', name: '按键编辑器', icon: 'gamepad-2', color: 'text-pink-500', bg: 'bg-pink-50', images: ['images/previews/key_1.png'] },
-      { id: 'effect', name: '效果编辑器', icon: 'sparkles', color: 'text-yellow-500', bg: 'bg-yellow-50', images: ['images/previews/effect_1.png', 'images/previews/effect_2.png'] }
+      { id: 'skin', name: '皮肤编辑器', icon: 'palette', color: 'text-blue-500', bg: 'bg-blue-50', images: ['skin_1.png', 'skin_2.png'] },
+      { id: 'hero', name: '英雄编辑器', icon: 'sword', color: 'text-indigo-500', bg: 'bg-indigo-50', images: ['hero_1.png', 'hero_2.png'] },
+      { id: 'equip', name: '装备编辑器', icon: 'shield', color: 'text-blue-600', bg: 'bg-blue-100', images: ['equip_1.png', 'equip_2.png'] },
+      { id: 'bio', name: '生物编辑器', icon: 'ghost', color: 'text-purple-500', bg: 'bg-purple-50', images: ['bio_1.png', 'bio_2.png'] },
+      { id: 'map', name: '地图编辑器', icon: 'map', color: 'text-emerald-500', bg: 'bg-emerald-50', images: ['map_1.png', 'map_2.png'] },
+      { id: 'broadcast', name: '播报编辑器', icon: 'megaphone', color: 'text-red-500', bg: 'bg-red-50', images: ['broadcast_1.png'] },
+      { id: 'key', name: '按键编辑器', icon: 'gamepad-2', color: 'text-pink-500', bg: 'bg-pink-50', images: ['key_1.png'] },
+      { id: 'effect', name: '效果编辑器', icon: 'sparkles', color: 'text-yellow-500', bg: 'bg-yellow-50', images: ['effect_1.png', 'effect_2.png'] }
     ];
     // ==========================================
 
@@ -393,7 +393,7 @@
       }
       const imgSrc = currentEditor.images[currentImageIndex];
       modalImage.src = imgSrc;
-      modalFilename.textContent = imgSrc.split('/').pop();
+      modalFilename.textContent = imgSrc;
       modalPlaceholder.style.display = 'none';
       
       modalImage.onerror = function() {
